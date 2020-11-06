@@ -24,7 +24,7 @@
     "url": "https://github.com/trungbkit/country-flags/issues"
   },
   "homepage": "http://hjnilsson.github.io/country-flags/",
-  "dependencies": {
+  "devDependencies": {
     "@supercharge/promise-pool": "^1.6.0",
     "imagemin-cli": "^6.0.0",
     "svgexport": "^0.4.1"
