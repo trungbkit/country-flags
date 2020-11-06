@@ -4,11 +4,13 @@
   "description": "SVG and PNG renders of all countries' flags.",
   "scripts": {
     "build-pngs": "node scripts/build-pngs.js",
+    "build-16-pngs": "node scripts/build-pngs.js :16",
+    "build-48-pngs": "node scripts/build-pngs.js :48",
     "build-100-250-1000-pngs": "node scripts/build-pngs.js 100: && node scripts/build-pngs.js 250: && node scripts/build-pngs.js 1000:"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hjnilsson/country-flags.git"
+    "url": "git+https://github.com/trungbkit/country-flags.git"
   },
   "keywords": [
     "flags",
@@ -19,7 +21,12 @@
   "author": "Hampus Nilsson",
   "license": "PD",
   "bugs": {
-    "url": "https://github.com/hjnilsson/country-flags/issues"
+    "url": "https://github.com/trungbkit/country-flags/issues"
   },
-  "homepage": "http://hjnilsson.github.io/country-flags/"
+  "homepage": "http://hjnilsson.github.io/country-flags/",
+  "dependencies": {
+    "@supercharge/promise-pool": "^1.6.0",
+    "imagemin-cli": "^6.0.0",
+    "svgexport": "^0.4.1"
+  }
 }
